@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="bg-base-100 shadow-sm">
+        <header>
+            <nav class="w-11/12 mx-auto">
+                <div class="navbar ">
+                    <div class="navbar-start">
+
+                        <a class="btn btn-ghost text-xl">English ‍<span><img src="./assets/logo.png" alt=""></span>
+                            জানালা</a>
+                    </div>
+
+                    <div class="navbar-end space-x-5">
+                        <a class="btn border-purple-800"><img src="./assets/fa-circle-question.png" alt="">FAC</a>
+                        <a class="btn  border-purple-800"><img src="./assets/fa-book-open.png" alt="">Learn</a>
+                        <a class="btn  border-purple-800"><img src="./assets/fa-arrow-right-from-bracket.png"
+                                alt="">LOgout</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <section>
+        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img src="./assets/hero-student.png" alt="">
+                <div>
+                    <h1 class="text-5xl font-bold">English is Easy</h1>
+                    <p class="py-6">
+                        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান,
+                        আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+                    <div class="space-y-5 mb-5">
+                        <input type="text" placeholder="Enter Your Name" class="input" /><input type="password"
+                            placeholder="**************" class="input" />
+                    </div>
+
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-11/12 mx-auto text-center mt-10 space-y-5">
+        <h1 class="text-6xl font-bold">Let's Learn Vocabularies</h1>
+        <div id="Lesson-contaner" class="flex justify-center gap-5 flex-wrap">
+            
+            
+        </div>
+        
+    </section>
+    <section class="w-11/12 mx-auto my-10">
+        <div id="word-contane" class="bg-slate-200 p-10 grid grid-cols-3 gap-10">
+            
+            <div class="col-span-full text-center space-y-5">
+                <p class="text-2xl">আপনি এখনো কোন Lesson Select করেন</p>
+                <h1 class="text-4xl font-bold">একটি Lesson Select করুন।</h1>
+            </div>
+            
+
+        </div>
+    </section>
+    <section>
+        
+        <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+   <div id="details-contenar">
+
+   </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+    </section>
+<script src="./script/index.js"></script>
+</body>
+
+</html>

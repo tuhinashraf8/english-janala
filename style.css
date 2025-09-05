@@ -1,0 +1,9 @@
+*{
+    font-family: bangla;
+}
+.active{
+    background-color: blue;
+    
+    color: white;
+    
+}
