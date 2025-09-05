@@ -78,7 +78,7 @@ const displayWord = (words) => {
         const wordCard = document.createElement("div")
         wordCard.innerHTML = `
     <div class="flex flex-col justify-between gap-5 items-center p-5 py-10 bg-white rounded-3xl h-full">
-                <h1 class="text-2xl">${word.word ? word.word : "আর্থ পাই নাই"}</h1>
+                <h1 class="text-4xl">${word.word ? word.word : "আর্থ পাই নাই"}</h1>
                 <p>Meaning /Pronounciation</p>
                 <p class="text-5xl">${word.meaning ? word.meaning : "আর্থ পাই নাই"} / ${word.pronunciation ? word.pronunciation : "আর্থ পাই নাই"}</p>
                 <div class="flex justify-between gap-5 w-10/12 mt-5">
@@ -99,7 +99,7 @@ const displayLesson = (lessons) => {
     for (lesson of lessons) {
         const btnDiv = document.createElement('div');
         btnDiv.innerHTML = `
-    <button id="lessonBtn-${lesson.level_no}" onclick="lodeLevelWord(${lesson.level_no})" class="btn  border-purple-800 lesson-btn"> <img src="./assets/fa-book-open.png" alt="">Lesson -${lesson.level_no}</button>
+    <button id="lessonBtn-${lesson.level_no}" onclick="lodeLevelWord(${lesson.level_no})" class="btn  border-purple-800 lesson-btn"> <img class="p-3 bg-white" src="./assets/fa-book-open.png" alt="">Lesson -${lesson.level_no}</button>
     `
         lessonContaner.append(btnDiv)
     }
